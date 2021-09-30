@@ -16,6 +16,10 @@ function generateMarkdown(data) {
 
   ## Project Description
   * ${data.description}
+  ## Installation Instructions
+  * ${data.installInstructions}
+  ## Usage Information
+  * ${data.usageInfo}
 
 `;
 }

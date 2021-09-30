@@ -28,41 +28,42 @@ const promptUser = () => {
             name: 'description',
             message: questions[1],
         },
-        // {
-        //     type: 'input',
-        //     name: 'installInstructions',
-        //     message: questions[2],
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'usageInfo',
-        //     message: questions[3],
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'contributionGuidelines',
-        //     message: questions[4],
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'testInstructions',
-        //     message: questions[5],
-        // },
-        // {//Find out how to choose from a list of options
-        //     type: 'input',
-        //     name: 'licenseOptions',
-        //     message: questions[6],
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'githubUser',
-        //     message: questions[7],
-        // },
-        // {
-        //     type: 'input',
-        //     name: 'email',
-        //     message: questions[8],
-        // }  
+        {
+            type: 'input',
+            name: 'installInstructions',
+            message: questions[2],
+        },
+        {
+            type: 'input',
+            name: 'usageInfo',
+            message: questions[3],
+        },
+        {
+            type: 'input',
+            name: 'contributionGuidelines',
+            message: questions[4],
+        },
+        {
+            type: 'input',
+            name: 'testInstructions',
+            message: questions[5],
+        },
+        {
+            type: 'list',
+            name: 'licenseOptions',
+            message: questions[6],
+            choices: ['License1', 'License2', 'License3'],
+        },
+        {
+            type: 'input',
+            name: 'githubUser',
+            message: questions[7],
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: questions[8],
+        }  
     ]);
 };
 

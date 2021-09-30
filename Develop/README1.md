@@ -1,5 +1,9 @@
-# README Generator 
+# Sam Adams project 
 
   ## Project Description
-  * This project will dynamically create a README.md file from user input
+  * this is a description
+  ## Installation Instructions
+  * to install this project clone ssh to terminal
+  ## Usage Information
+  * no usage information
 
