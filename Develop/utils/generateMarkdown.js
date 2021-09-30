@@ -12,7 +12,17 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title} 
+  return `# ${data.title}
+  
+  #### Table of Contents
+  1. [Project Description](#project-description)
+  2. [Installation Instructions](#installation-instructions)
+  3. [Usage Information](#usage-information)
+  4. [Contribution Guidelines](#contribution-guidelines)
+  5. [Code of Conduct](#code-of-conduct)
+  6. [Test Instructions](#testInstructions)
+  7. [License](#license)
+  8. [Questions](#questions)
 
   ## Project Description
   * ${data.description}
@@ -20,7 +30,17 @@ function generateMarkdown(data) {
   * ${data.installInstructions}
   ## Usage Information
   * ${data.usageInfo}
-
+  ## Contribution Guidelines
+  * ${data.contributionGuidelines}
+  ## Code of Conduct 
+  * [Contributor Covenant Code of Conduct](https://www.contributor-covenant.org/version/2/0/code_of_conduct/code_of_conduct.md)
+  ## Test Instructions
+  * ${data.testInstructions}
+  ## License
+  * ${data.licenseOptions}
+  ## Questions
+  * Contact me on Github [${data.githubUser}](https://github.com/${data.githubUser})
+  * or by Email at ${data.email}
 `;
 }
 

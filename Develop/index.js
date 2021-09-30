@@ -1,7 +1,6 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const { type } = require('os');
 const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = [
@@ -49,10 +48,13 @@ const promptUser = () => {
             message: questions[5],
         },
         {
-            type: 'list',
+            type: 'checkbox',
             name: 'licenseOptions',
             message: questions[6],
-            choices: ['License1', 'License2', 'License3'],
+            choices: [
+                "[MIT License](MITLICENSE.txt)",
+                "[ISC License](ISCLICENSE.txt)",
+            ]
         },
         {
             type: 'input',
@@ -77,8 +79,8 @@ function writeToFile(fileName, data) {}
 // TODO: Create a function to initialize app
 const init = () => {
     promptUser()
-        .then((answers) => fs.writeFileSync('README1.md', generateMarkdown(answers)))
-        .then(() => console.log('Successfully wrote to README1.md'))
+        .then((answers) => fs.writeFileSync('README.md', generateMarkdown(answers)))
+        .then(() => console.log('Successfully wrote to README.md'))
         .catch((err) => console.error(err));
 };
 
